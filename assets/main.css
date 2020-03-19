@@ -1,0 +1,139 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    background: #006633;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+button {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:focus {
+    outline: none;
+}
+
+li {
+    margin-left: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: block;
+    list-style: none;
+
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#intro-text {
+    margin-top: 20%;
+    text-align: center;
+    padding: 5%;
+}
+
+#intro-text p {
+    font-weight: lighter;
+}
+
+#line-buttons-container {
+    text-align: center;
+}
+
+#bus-routes {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 20%;
+    margin: 0%;
+    display: none;
+    overflow-y: scroll;
+}
+
+#close-button {
+    margin-top: -10%;
+    margin-bottom: 10%;
+    margin-left: -5%;
+    color: #000;
+}
+
+#bus-routes li {
+    margin-bottom: 5%;
+    margin-left: -25%;
+    color: #000;
+}
+
+#bus-times {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 5%;
+    overflow-y: scroll;
+}
+
+#bus-times h3 {
+    color: #000;
+}
+
+#bus-times-list li {
+    list-style: none;
+    color: #000;
+}
+
+#stations-list li {
+    color: #fff;
+}
+
+#fave-button {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 30%;
+    border: 3px solid #fff;
+    display: inline;
+    text-align: center;
+    padding: 3%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#fave-button svg {
+    width: 40%;
+}
+
+#bus-times svg {
+    margin-top: 10%;
+    margin-left: 35%;
+    cursor: pointer;
+}

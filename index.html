@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> TTC APP </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" type = "text/css" href = "assets/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <h1> My TTC </h1>
+        <div id = "line-buttons-container">
+            <button id = "yellow-line-button"> Yellow Line </button>
+            <button id = "green-line-button"> Green Line </button>
+            <button id = "purple-line-button"> Purple Line </button>
+        </div>
+
+        <div id = "intro-text">
+            <h3> Hello and welcome to the ttc app. 
+                Click on one of the lines to view stations, once selected you can 
+                view bus routes and bus times simply through tapping.
+            </h3>
+
+            <p> Made by: AdesignsM </p>
+        </div>
+
+        <ul id = "stations-list">
+
+        </ul>
+
+        <div id = "fave-button">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="64" height="64"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#ffffff">
+                        <path d="M86,8.0625c-20.82812,0 -40.44687,8.0625 -55.09375,22.84375c-15.18437,15.18437 -22.84375,35.07188 -22.84375,55.09375c0,20.02188 7.65937,39.90937 22.84375,55.09375c14.78125,14.78125 34.26563,22.84375 55.09375,22.84375c20.82813,0 40.44687,-8.0625 55.09375,-22.84375c30.36875,-30.36875 30.36875,-79.81875 0,-110.1875c-14.64688,-14.78125 -34.26562,-22.84375 -55.09375,-22.84375zM86,16.125c18.67813,0 36.14792,7.2552 49.45105,20.42395c13.57188,13.70625 20.42395,31.57917 20.42395,49.45105c0,17.87188 -6.85208,35.7448 -20.42395,49.45105c-13.30312,13.16875 -30.77292,20.42395 -49.45105,20.42395c-18.67812,0 -36.14792,-7.2552 -49.45105,-20.42395c-27.14375,-27.27812 -27.14375,-71.62397 0,-98.9021c13.30312,-13.16875 30.77292,-20.42395 49.45105,-20.42395zM72.31055,68.09558c-3.37617,0 -6.73502,1.30858 -9.28815,3.92889c-5.10625,5.24062 -5.24063,13.5724 0,18.67865l19.61822,19.61822c1.88125,1.88125 4.97135,1.88125 6.8526,0l19.61823,-19.61822c5.24063,-5.24062 5.24063,-13.5724 0,-18.67865c-5.24063,-5.10625 -13.70625,-5.24062 -18.8125,0l-4.29895,4.30157l-4.29895,-4.30157c-2.62031,-2.62031 -6.01433,-3.92889 -9.3905,-3.92889z"></path>
+                    </g>
+                </g>
+            </svg>
+
+            <p> Favourites </p>
+        </div>
+
+        <div id = "bus-routes">
+            <h3 id = "close-button"> CLOSE </h3>
+            <ul id = "bus-list">
+            </ul>
+        </div>
+
+        <div id = "bus-times">
+            <h3> BACK </h3>
+            <ul id = "bus-times-list"></ul>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="64" height="64"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#e74c3c">
+                        <path d="M86,8.0625c-20.82812,0 -40.44687,8.0625 -55.09375,22.84375c-15.18437,15.18437 -22.84375,35.07188 -22.84375,55.09375c0,20.02188 7.65937,39.90937 22.84375,55.09375c14.78125,14.78125 34.26563,22.84375 55.09375,22.84375c20.82813,0 40.44687,-8.0625 55.09375,-22.84375c30.36875,-30.36875 30.36875,-79.81875 0,-110.1875c-14.64688,-14.78125 -34.26562,-22.84375 -55.09375,-22.84375zM86,16.125c18.67813,0 36.14792,7.2552 49.45105,20.42395c13.57188,13.70625 20.42395,31.57917 20.42395,49.45105c0,17.87188 -6.85208,35.7448 -20.42395,49.45105c-13.30312,13.16875 -30.77292,20.42395 -49.45105,20.42395c-18.67812,0 -36.14792,-7.2552 -49.45105,-20.42395c-27.14375,-27.27812 -27.14375,-71.62397 0,-98.9021c13.30312,-13.16875 30.77292,-20.42395 49.45105,-20.42395zM72.31055,68.09558c-3.37617,0 -6.73502,1.30858 -9.28815,3.92889c-5.10625,5.24062 -5.24063,13.5724 0,18.67865l19.61822,19.61822c1.88125,1.88125 4.97135,1.88125 6.8526,0l19.61823,-19.61822c5.24063,-5.24062 5.24063,-13.5724 0,-18.67865c-5.24063,-5.10625 -13.70625,-5.24062 -18.8125,0l-4.29895,4.30157l-4.29895,-4.30157c-2.62031,-2.62031 -6.01433,-3.92889 -9.3905,-3.92889z"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </body>
+
+    <script type = "text/javascript" src = "scripts/stations_db.js"></script>
+    <script type = "text/javascript" src = "scripts/main.js"></script>
+</html>
